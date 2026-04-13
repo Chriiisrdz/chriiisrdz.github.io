@@ -443,22 +443,47 @@
     </section>
 
     <section id="veille" class="reveal">
-        <h2><i class="fa-solid fa-newspaper"></i> Veille Technologique</h2>
-        <div class="projects-grid">
-            <div class="card">
-                <span class="veille-date">Sujet Principal</span>
-                <h3>L'IA en Cybersécurité</h3>
-                <p>Impact IA sur la détection des menaces.</p>
-                <a href="#" class="card-link">Voir synthèse <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-            <div class="card">
-                <span class="veille-date">Outil</span>
-                <h3>Virtualisation</h3>
-                <p>Comparatif VMware vs Proxmox.</p>
-                <a href="#" class="card-link">Mon étude <i class="fa-solid fa-arrow-right"></i></a>
-            </div>
-        </div>
-    </section>
+    <h2><i class="fa-solid fa-newspaper"></i> Veille Technologique</h2>
+    <p style="text-align:center; color:#a1a1aa; margin-bottom:40px;">Dernières alertes de cybersécurité (Flux automatisé)</p>
+    
+    <div class="projects-grid" id="rss-feed-container">
+        <p style="text-align:center; color:#a855f7;">Chargement du flux en cours...</p>
+    </div>
+</section>
+
+<script>
+    // On utilise l'API gratuite rss2json pour transformer le flux RSS du CERT-FR en données lisibles
+    const rssUrl = 'https://www.cert.ssi.gouv.fr/alerte/feed/';
+    const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}`;
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(data => {
+            const container = document.getElementById('rss-feed-container');
+            container.innerHTML = ''; // On vide le message de chargement
+
+            // On prend les 3 premiers articles seulement
+            const articles = data.items.slice(0, 3);
+
+            articles.forEach(article => {
+                // On formate un peu la date
+                const datePub = new Date(article.pubDate).toLocaleDateString('fr-FR');
+                
+                // On crée la carte HTML pour chaque article
+                const cardHtml = `
+                    <div class="card">
+                        <span class="veille-date">Alerte CERT-FR • ${datePub}</span>
+                        <h3 style="font-size: 1.1rem; line-height: 1.3;">${article.title}</h3>
+                        <a href="${article.link}" target="_blank" class="card-link">Lire l'alerte <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                `;
+                container.innerHTML += cardHtml;
+            });
+        })
+        .catch(error => {
+            document.getElementById('rss-feed-container').innerHTML = '<p>Impossible de charger le flux pour le moment.</p>';
+        });
+</script>
 
     <section id="certifs" class="reveal">
         <h2><i class="fa-solid fa-medal"></i> Certifications & Diplômes</h2>
