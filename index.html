@@ -479,10 +479,10 @@
     </section>
 
     <script>
-			// On passe sur le flux des Avis (mis à jour quotidiennement)
-			const rssUrl = 'https://www.cert.ssi.gouv.fr/avis/feed/';
-			// L'astuce anti-cache (un nombre aléatoire) pour forcer rss2json à récupérer du neuf
-			const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}&api_key=&_=${new Date().getTime()}`;
+		// On passe sur le flux des Avis (mis à jour quotidiennement)
+		const rssUrl = 'https://www.cert.ssi.gouv.fr/avis/feed/';
+		// L'astuce anti-cache (un nombre aléatoire) pour forcer rss2json à récupérer du neuf
+		const apiUrl = `https://api.rss2json.com/v1/api.json?rss_url=${rssUrl}&api_key=&_=${new Date().getTime()}`;
 
         fetch(apiUrl)
             .then(response => response.json())
