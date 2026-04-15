@@ -421,164 +421,93 @@
     </section>
 
     <section id="docs" class="reveal">
-        <h2><i class="fa-solid fa-book"></i> Documentation Technique</h2>
-        <p style="text-align:center; color:#a1a1aa; margin-bottom:40px;">Cliquez pour lire les procédures sans quitter le site.</p>
-<section id="projets" style="padding: 60px 20px; background-color: #0b0914; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <div style="max-width: 1200px; margin: 0 auto;">
-        <h2 style="text-align: center; color: #ffffff; margin-bottom: 50px; font-size: 2.2em;">Mes Réalisations Professionnelles</h2>
+        <h2><i class="fa-solid fa-folder-open"></i> Mes Réalisations Professionnelles</h2>
+        <p style="text-align:center; color:#a1a1aa; margin-bottom:40px;">Cliquez pour lire les procédures officielles sans quitter le site.</p>
         
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px;">
-
-            <div style="background-color: #14111d; padding: 30px; border-radius: 12px; border: 1px solid #2a2538; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                <h3 style="color: #ffffff; margin-top: 0; display: flex; align-items: center; gap: 12px; font-size: 1.4em;">
-                    <i class="fa-solid fa-server" style="color: #a855f7;"></i> Virtualisation
-                </h3>
-                <p style="color: #e2e8f0; font-size: 1em; margin: 20px 0 10px 0;">Mise en production d'une infrastructure de virtualisation.</p>
-                <ul style="color: #94a3b8; font-size: 0.9em; padding-left: 20px; margin-bottom: 25px; line-height: 1.6;">
-                    <li>Serveur physique HPE</li>
-                    <li>Hyperviseur Proxmox VE (Bare-Metal)</li>
-                </ul>
-                <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Proxmox</span>
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Système</span>
+        <div class="projects-grid">
+            
+            <div class="card">
+                <h3 style="font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-server"></i> Virtualisation</h3>
+                <p style="color: #e2e8f0; font-weight: 500; margin-bottom: 5px;">Mise en production d'une infrastructure.</p>
+                <p style="color: #94a3b8; font-size: 0.9em; margin-bottom: 20px;">Serveur HPE & Hyperviseur Proxmox VE.</p>
+                <div style="margin-bottom: 15px;">
+                    <span class="tag">Proxmox</span><span class="tag">Système</span>
                 </div>
-                <a onclick="openPdf('docs/e4_rodriguez_doc_proxmox.pdf')" style="color: #a855f7; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 1em; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-eye"></i> Ouvrir le PDF
-                </a>
+                <a onclick="openPdf('docs/e4_rodriguez_doc_proxmox.pdf')" class="card-link"><i class="fa-solid fa-eye"></i> Ouvrir le PDF</a>
             </div>
 
-            <div style="background-color: #14111d; padding: 30px; border-radius: 12px; border: 1px solid #2a2538; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                <h3 style="color: #ffffff; margin-top: 0; display: flex; align-items: center; gap: 12px; font-size: 1.4em;">
-                    <i class="fa-solid fa-sitemap" style="color: #a855f7;"></i> Annuaire
-                </h3>
-                <p style="color: #e2e8f0; font-size: 1em; margin: 20px 0 10px 0;">Déploiement d'un annuaire multi-sites.</p>
-                <ul style="color: #94a3b8; font-size: 0.9em; padding-left: 20px; margin-bottom: 25px; line-height: 1.6;">
-                    <li>Windows Server 2022</li>
-                    <li>Services AD DS et DNS intégrés</li>
-                </ul>
-                <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Windows Server</span>
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Active Directory</span>
+            <div class="card">
+                <h3 style="font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-sitemap"></i> Annuaire</h3>
+                <p style="color: #e2e8f0; font-weight: 500; margin-bottom: 5px;">Déploiement d'un annuaire multi-sites.</p>
+                <p style="color: #94a3b8; font-size: 0.9em; margin-bottom: 20px;">Windows Server 2022 (AD DS, DNS).</p>
+                <div style="margin-bottom: 15px;">
+                    <span class="tag">Windows Server</span><span class="tag">Active Directory</span>
                 </div>
-                <a onclick="openPdf('docs/e4_rodriguez_doc_ad.pdf')" style="color: #a855f7; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 1em; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-eye"></i> Ouvrir le PDF
-                </a>
+                <a onclick="openPdf('docs/e4_rodriguez_doc_ad.pdf')" class="card-link"><i class="fa-solid fa-eye"></i> Ouvrir le PDF</a>
             </div>
 
-            <div style="background-color: #14111d; padding: 30px; border-radius: 12px; border: 1px solid #2a2538; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                <h3 style="color: #ffffff; margin-top: 0; display: flex; align-items: center; gap: 12px; font-size: 1.4em;">
-                    <i class="fa-solid fa-shield-halved" style="color: #a855f7;"></i> Sécurité
-                </h3>
-                <p style="color: #e2e8f0; font-size: 1em; margin: 20px 0 10px 0;">Sécurisation et interconnexion réseau.</p>
-                <ul style="color: #94a3b8; font-size: 0.9em; padding-left: 20px; margin-bottom: 25px; line-height: 1.6;">
-                    <li>Pare-feu pfSense</li>
-                    <li>Tunnel VPN IPsec Site-à-Site</li>
-                </ul>
-                <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">pfSense</span>
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">VPN</span>
+            <div class="card">
+                <h3 style="font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-shield-halved"></i> Sécurité</h3>
+                <p style="color: #e2e8f0; font-weight: 500; margin-bottom: 5px;">Sécurisation et interconnexion réseau.</p>
+                <p style="color: #94a3b8; font-size: 0.9em; margin-bottom: 20px;">Pare-feu pfSense & Tunnel VPN IPsec.</p>
+                <div style="margin-bottom: 15px;">
+                    <span class="tag">pfSense</span><span class="tag">VPN</span>
                 </div>
-                <a onclick="openPdf('docs/e4_rodriguez_doc_pfsense.pdf')" style="color: #a855f7; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 1em; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-eye"></i> Ouvrir le PDF
-                </a>
+                <a onclick="openPdf('docs/e4_rodriguez_doc_pfsense.pdf')" class="card-link"><i class="fa-solid fa-eye"></i> Ouvrir le PDF</a>
             </div>
 
-            <div style="background-color: #14111d; padding: 30px; border-radius: 12px; border: 1px solid #2a2538; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                <h3 style="color: #ffffff; margin-top: 0; display: flex; align-items: center; gap: 12px; font-size: 1.4em;">
-                    <i class="fa-solid fa-network-wired" style="color: #a855f7;"></i> Réseau Local
-                </h3>
-                <p style="color: #e2e8f0; font-size: 1em; margin: 20px 0 10px 0;">Configuration de la commutation locale.</p>
-                <ul style="color: #94a3b8; font-size: 0.9em; padding-left: 20px; margin-bottom: 25px; line-height: 1.6;">
-                    <li>Switch Cisco</li>
-                    <li>Création de VLANs et liens Trunk</li>
-                </ul>
-                <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Cisco</span>
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Switching</span>
+            <div class="card">
+                <h3 style="font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-network-wired"></i> Réseau Local</h3>
+                <p style="color: #e2e8f0; font-weight: 500; margin-bottom: 5px;">Configuration de la commutation locale.</p>
+                <p style="color: #94a3b8; font-size: 0.9em; margin-bottom: 20px;">Switch Cisco (VLANs, liens Trunk).</p>
+                <div style="margin-bottom: 15px;">
+                    <span class="tag">Cisco</span><span class="tag">Switching</span>
                 </div>
-                <a onclick="openPdf('docs/e4_rodriguez_doc_switch.pdf')" style="color: #a855f7; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 1em; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-eye"></i> Ouvrir le PDF
-                </a>
+                <a onclick="openPdf('docs/e4_rodriguez_doc_switch.pdf')" class="card-link"><i class="fa-solid fa-eye"></i> Ouvrir le PDF</a>
             </div>
 
-            <div style="background-color: #14111d; padding: 30px; border-radius: 12px; border: 1px solid #2a2538; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                <h3 style="color: #ffffff; margin-top: 0; display: flex; align-items: center; gap: 12px; font-size: 1.4em;">
-                    <i class="fa-solid fa-route" style="color: #a855f7;"></i> Routage
-                </h3>
-                <p style="color: #e2e8f0; font-size: 1em; margin: 20px 0 10px 0;">Configuration du routage et des VLANs.</p>
-                <ul style="color: #94a3b8; font-size: 0.9em; padding-left: 20px; margin-bottom: 25px; line-height: 1.6;">
-                    <li>Routeur Cisco</li>
-                    <li>Routage Inter-VLANs</li>
-                </ul>
-                <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Cisco</span>
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Routing</span>
+            <div class="card">
+                <h3 style="font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-route"></i> Routage</h3>
+                <p style="color: #e2e8f0; font-weight: 500; margin-bottom: 5px;">Configuration du routage et des VLANs.</p>
+                <p style="color: #94a3b8; font-size: 0.9em; margin-bottom: 20px;">Routeur Cisco (Routage Inter-VLAN).</p>
+                <div style="margin-bottom: 15px;">
+                    <span class="tag">Cisco</span><span class="tag">Routing</span>
                 </div>
-                <a onclick="openPdf('docs/e4_rodriguez_doc_routeur.pdf')" style="color: #a855f7; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 1em; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-eye"></i> Ouvrir le PDF
-                </a>
+                <a onclick="openPdf('docs/e4_rodriguez_doc_routeur.pdf')" class="card-link"><i class="fa-solid fa-eye"></i> Ouvrir le PDF</a>
             </div>
 
-            <div style="background-color: #14111d; padding: 30px; border-radius: 12px; border: 1px solid #2a2538; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                <h3 style="color: #ffffff; margin-top: 0; display: flex; align-items: center; gap: 12px; font-size: 1.4em;">
-                    <i class="fa-solid fa-ticket" style="color: #a855f7;"></i> Support ITIL
-                </h3>
-                <p style="color: #e2e8f0; font-size: 1em; margin: 20px 0 10px 0;">Déploiement d'une solution de ticketing.</p>
-                <ul style="color: #94a3b8; font-size: 0.9em; padding-left: 20px; margin-bottom: 25px; line-height: 1.6;">
-                    <li>Déploiement en conteneur LXC</li>
-                    <li>Gestion du parc et des incidents</li>
-                </ul>
-                <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">GLPI</span>
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">ITIL</span>
+            <div class="card">
+                <h3 style="font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-ticket"></i> Support ITIL</h3>
+                <p style="color: #e2e8f0; font-weight: 500; margin-bottom: 5px;">Déploiement d'une solution ticketing.</p>
+                <p style="color: #94a3b8; font-size: 0.9em; margin-bottom: 20px;">Gestion du parc et des incidents (LXC).</p>
+                <div style="margin-bottom: 15px;">
+                    <span class="tag">GLPI</span><span class="tag">ITIL</span>
                 </div>
-                <a onclick="openPdf('docs/e4_rodriguez_doc_glpi.pdf')" style="color: #a855f7; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 1em; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-eye"></i> Ouvrir le PDF
-                </a>
+                <a onclick="openPdf('docs/e4_rodriguez_doc_glpi.pdf')" class="card-link"><i class="fa-solid fa-eye"></i> Ouvrir le PDF</a>
             </div>
 
-            <div style="background-color: #14111d; padding: 30px; border-radius: 12px; border: 1px solid #2a2538; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                <h3 style="color: #ffffff; margin-top: 0; display: flex; align-items: center; gap: 12px; font-size: 1.4em;">
-                    <i class="fa-solid fa-floppy-disk" style="color: #a855f7;"></i> Continuité
-                </h3>
-                <p style="color: #e2e8f0; font-size: 1em; margin: 20px 0 10px 0;">Mise en place de la stratégie de sauvegarde.</p>
-                <ul style="color: #94a3b8; font-size: 0.9em; padding-left: 20px; margin-bottom: 25px; line-height: 1.6;">
-                    <li>Proxmox Backup Server (PBS)</li>
-                    <li>Planification et alertes email</li>
-                </ul>
-                <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">PBS</span>
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Sauvegarde</span>
+            <div class="card">
+                <h3 style="font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-floppy-disk"></i> Continuité</h3>
+                <p style="color: #e2e8f0; font-weight: 500; margin-bottom: 5px;">Stratégie de sauvegarde planifiée.</p>
+                <p style="color: #94a3b8; font-size: 0.9em; margin-bottom: 20px;">Proxmox Backup Server & Alertes mail.</p>
+                <div style="margin-bottom: 15px;">
+                    <span class="tag">PBS</span><span class="tag">Sauvegarde</span>
                 </div>
-                <a onclick="openPdf('docs/e4_rodriguez_doc_pbs.pdf')" style="color: #a855f7; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 1em; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-eye"></i> Ouvrir le PDF
-                </a>
+                <a onclick="openPdf('docs/e4_rodriguez_doc_pbs.pdf')" class="card-link"><i class="fa-solid fa-eye"></i> Ouvrir le PDF</a>
             </div>
 
-            <div style="background-color: #14111d; padding: 30px; border-radius: 12px; border: 1px solid #2a2538; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
-                <h3 style="color: #ffffff; margin-top: 0; display: flex; align-items: center; gap: 12px; font-size: 1.4em;">
-                    <i class="fa-solid fa-chart-line" style="color: #a855f7;"></i> Supervision
-                </h3>
-                <p style="color: #e2e8f0; font-size: 1em; margin: 20px 0 10px 0;">Déploiement d'une centralisation des logs.</p>
-                <ul style="color: #94a3b8; font-size: 0.9em; padding-left: 20px; margin-bottom: 25px; line-height: 1.6;">
-                    <li>Serveur Graylog</li>
-                    <li>Collecte des logs réseau via Syslog</li>
-                </ul>
-                <div style="display: flex; gap: 10px; margin-bottom: 25px; flex-wrap: wrap;">
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Graylog</span>
-                    <span style="background-color: #231d33; color: #d8b4fe; padding: 5px 12px; border-radius: 20px; font-size: 0.8em; border: 1px solid #3b3259;">Syslog</span>
+            <div class="card">
+                <h3 style="font-size: 1.3rem; margin-bottom: 15px;"><i class="fa-solid fa-chart-line"></i> Supervision</h3>
+                <p style="color: #e2e8f0; font-weight: 500; margin-bottom: 5px;">Centralisation et analyse des logs.</p>
+                <p style="color: #94a3b8; font-size: 0.9em; margin-bottom: 20px;">Serveur Graylog (Collecte via Syslog).</p>
+                <div style="margin-bottom: 15px;">
+                    <span class="tag">Graylog</span><span class="tag">Syslog</span>
                 </div>
-                <a onclick="openPdf('docs/e4_rodriguez_doc_graylog.pdf')" style="color: #a855f7; font-weight: bold; text-decoration: none; cursor: pointer; font-size: 1em; display: flex; align-items: center; gap: 8px;">
-                    <i class="fa-solid fa-eye"></i> Ouvrir le PDF
-                </a>
+                <a onclick="openPdf('docs/e4_rodriguez_doc_graylog.pdf')" class="card-link"><i class="fa-solid fa-eye"></i> Ouvrir le PDF</a>
             </div>
 
-        </div>
-    </div>
-</section>
         </div>
     </section>
-
     <style>
         /* CSS spécifique pour l'animation de chargement du flux RSS */
         .rss-loader {
