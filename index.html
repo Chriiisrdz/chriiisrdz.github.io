@@ -519,7 +519,24 @@
             <div class="rss-loader"></div>
             <p style="color: #a855f7; margin-top: 15px; font-weight: 500;">Analyse des dernières menaces en cours...</p>
         </div>
+	<div class="projects-grid" id="rss-feed-container" style="display: none;">
+    
+		<div class="card">
+        <span class="veille-date"><i class="fa-solid fa-clock"></i> Publié le 20/04/2026</span>
+        <h3 style="font-size: 1.1rem; line-height: 1.4; margin-bottom: 15px;">Fuite de données massive à l'ANTS (20 avril 2026)</h3>
+        <div style="margin-bottom: 10px;">
+            <span class="tag"><i class="fa-solid fa-shield-halved"></i> Fuite de données</span>
+            <span class="tag"><i class="fa-solid fa-triangle-exclamation"></i> Cyber-Alerte</span>
+        </div>
+        <p class="rss-desc">Une compromission majeure touchant l'Agence Nationale des Titres Sécurisés (ANTS). Une vulnérabilité de type IDOR sur une API a permis l'exfiltration potentielle de millions d'enregistrements d'état civil...</p>
+        <a href="https://www.solutions-numeriques.com/une-base-de-donnees-massive-de-lants-revendiquee-et-proposee-a-la-vente-en-ligne/" target="_blank" class="card-link" style="margin-top: 15px;">Lire l'alerte complète <i class="fa-solid fa-arrow-right"></i></a>
+		</div>
 
+	</div> ```
+
+En la mettant exactement là, la carte est "emprisonnée" dans la grille, et ton Javascript viendra gentiment ajouter les autres alertes juste à côté !
+
+**Une fois que tu as rafraîchi ta page et admiré le résultat, es-tu chaud pour basculer sur ton Windows Server (`SRVM-AD-01`) et lancer l'installation de ton Autorité de Certification (PKI) ?**
         <div class="projects-grid" id="rss-feed-container" style="display: none;">
             </div>
 
@@ -566,19 +583,6 @@
                 document.getElementById('loading-spinner').innerHTML = '<p style="color:#ef4444;"><i class="fa-solid fa-triangle-exclamation"></i> Impossible de synchroniser le flux pour le moment. Le serveur source est peut-être inaccessible.</p>';
             });
     </script>
-	<div class="projects-grid" id="rss-feed-container" style="display: none;">
-    
-    <div class="card">
-        <span class="veille-date"><i class="fa-solid fa-clock"></i> Publié le 20/04/2026</span>
-        <h3 style="font-size: 1.1rem; line-height: 1.4; margin-bottom: 15px;">Fuite de données massive à l'ANTS (20 avril 2026)</h3>
-        <div style="margin-bottom: 10px;">
-            <span class="tag"><i class="fa-solid fa-shield-halved"></i> Fuite de données</span>
-            <span class="tag"><i class="fa-solid fa-triangle-exclamation"></i> Cyber-Alerte</span>
-        </div>
-        <p class="rss-desc">Une compromission majeure touchant l'Agence Nationale des Titres Sécurisés (ANTS). Une vulnérabilité de type IDOR sur une API a permis l'exfiltration potentielle de millions d'enregistrements d'état civil...</p>
-        <a href="https://www.solutions-numeriques.com/une-base-de-donnees-massive-de-lants-revendiquee-et-proposee-a-la-vente-en-ligne/" target="_blank" class="card-link" style="margin-top: 15px;">Lire l'alerte complète <i class="fa-solid fa-arrow-right"></i></a>
-    </div>
-    </div>
     <section id="certifs" class="reveal">
         <h2><i class="fa-solid fa-medal"></i> Certifications & Diplômes</h2>
         <div class="projects-grid">
