@@ -566,19 +566,19 @@
                 document.getElementById('loading-spinner').innerHTML = '<p style="color:#ef4444;"><i class="fa-solid fa-triangle-exclamation"></i> Impossible de synchroniser le flux pour le moment. Le serveur source est peut-être inaccessible.</p>';
             });
     </script>
-	<div class="card">
-		<p class="date"><i class="fa-regular fa-clock"></i> Publié le 20/04/2026</p>
-		<h3>Fuite de données massive à l'ANTS (20 avril 2026)</h3>
+	<div class="projects-grid" id="rss-feed-container" style="display: none;">
     
-		<div class="tags">
-        <span class="tag-cert"><i class="fa-solid fa-shield"></i> Fuite de données</span>
-        <span class="tag-alerte"><i class="fa-solid fa-triangle-exclamation"></i> Cyber-Alerte</span>
-		</div>
-    
-		<p>Une compromission majeure touchant l'Agence Nationale des Titres Sécurisés (ANTS). Une vulnérabilité de type IDOR sur une API a permis l'exfiltration potentielle de millions d'enregistrements d'état civil...</p>
-		
-		<a href="https://www.solutions-numeriques.com/une-base-de-donnees-massive-de-lants-revendiquee-et-proposee-a-la-vente-en-ligne/" target="_blank" class="read-more">Lire l'alerte complète <i class="fa-solid fa-arrow-right"></i></a>
-	</div>
+    <div class="card">
+        <span class="veille-date"><i class="fa-solid fa-clock"></i> Publié le 20/04/2026</span>
+        <h3 style="font-size: 1.1rem; line-height: 1.4; margin-bottom: 15px;">Fuite de données massive à l'ANTS (20 avril 2026)</h3>
+        <div style="margin-bottom: 10px;">
+            <span class="tag"><i class="fa-solid fa-shield-halved"></i> Fuite de données</span>
+            <span class="tag"><i class="fa-solid fa-triangle-exclamation"></i> Cyber-Alerte</span>
+        </div>
+        <p class="rss-desc">Une compromission majeure touchant l'Agence Nationale des Titres Sécurisés (ANTS). Une vulnérabilité de type IDOR sur une API a permis l'exfiltration potentielle de millions d'enregistrements d'état civil...</p>
+        <a href="https://www.solutions-numeriques.com/une-base-de-donnees-massive-de-lants-revendiquee-et-proposee-a-la-vente-en-ligne/" target="_blank" class="card-link" style="margin-top: 15px;">Lire l'alerte complète <i class="fa-solid fa-arrow-right"></i></a>
+    </div>
+    </div>
     <section id="certifs" class="reveal">
         <h2><i class="fa-solid fa-medal"></i> Certifications & Diplômes</h2>
         <div class="projects-grid">
